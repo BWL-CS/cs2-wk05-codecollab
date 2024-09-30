@@ -2,6 +2,7 @@ public class Main {
 
    public static void main(String []args) {
 
+      // *** STRING CLASS METHODS ***
       String scroll1 = "The treasure lies beyond the mountains.";
       String scroll2 = "Beware of the dragon's lair!";
       String secretMessage = "The treasure lies beyond the mountains.";
@@ -20,6 +21,9 @@ public class Main {
 
       System.out.println("Result of comparing Scroll 1 to Scroll 2: " + scroll1.compareTo(scroll2));
       System.out.println("Result of comparing Scroll 2 to Scroll 1: " + scroll2.compareTo(scroll1));
+
+      // *** MATH CLASS METHODS ***
+
 
    }
 }
