@@ -14,11 +14,15 @@ public class Main {
       System.out.println("Scroll 2: " + scroll2);
       System.out.println(scroll2.length());
 
-      System.out.println("Key phrase from Scroll 1: " + scroll1.substring(16, 32)); 
-      System.out.println("Hidden warning in Scroll 2: " + scroll2.substring(12));
+      String keyPhrase = scroll1.substring(18, 38);
+      String warning = scroll2.substring(14);
+      System.out.println("Key phrase from Scroll 1: " + keyPhrase); 
+      System.out.println("Hidden warning in Scroll 2: " + warning);
 
-      System.out.println("Position of 'treasure' in Scroll 1: " + scroll1.indexOf("treasure"));
-      System.out.println("Position of 'dragon' in Scroll 1: " + scroll1.indexOf("dragon"));
+      int treasureIndex = scroll1.indexOf("treasure");
+      int dragonIndex = scroll1.indexOf("dragon");
+      System.out.println("Position of 'treasure' in Scroll 1: " + treasureIndex);
+      System.out.println("Position of 'dragon' in Scroll 1: " + dragonIndex);
 
       System.out.println("Does Scroll 1 match the secret message?: " + scroll1.equals(secretMessage));
       System.out.println("Does Scroll 2 match the secret message?: " + scroll2.equals(secretMessage));
@@ -27,20 +31,26 @@ public class Main {
       System.out.println("Comparing Scroll 2 to Scroll 1: " + scroll2.compareTo(scroll1));
 
       // *** MATH CLASS METHODS ***
-      System.out.println("--- MATH CLASS ---");
+      System.out.println("\n--- MATH CLASS ---");
 
+      // HINT: try running the program multiple times...
       double rand = Math.random();
       System.out.println("Here's a random number: " + rand);
-      double biggerRand = Math.random() * 500 + 100;
+      double biggerRand = Math.random() * 500;
       System.out.println("Here's a bigger random number: " + biggerRand);
       int randInt = (int) (Math.random() * 100 + 1);
       System.out.println("Here's a random whole number: " + randInt);
 
-      double absoluteD = Math.abs(biggerRand);
-      System.out.println("Absolute value of the random bigger number: " + absoluteD);
+      double absoluteD = Math.abs(-3.14);
+      System.out.println("Absolute value of -3.14 is: " + absoluteD);
+      int absoluteI = Math.abs(-3);
+      System.out.println("Absolute value of -3 is: " + absoluteI);
 
-      int absoluteI = Math.abs(randInt);
-      System.out.println("Absolute value of the random whole number: " + absoluteI);
+      double cubed = Math.pow(randInt, 3);
+      System.out.println(randInt + " to the 3rd power is: " + cubed);
+
+      double squareRoot = Math.sqrt(2500);
+      System.out.println("Square root of 2500 is: " + squareRoot);
 
       
    }
