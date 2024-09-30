@@ -3,6 +3,8 @@ public class Main {
    public static void main(String []args) {
 
       // *** STRING CLASS METHODS ***
+      System.out.println("--- STRING CLASS ---");
+
       String scroll1 = "The treasure lies beyond the mountains.";
       String scroll2 = "Beware of the dragon's lair!";
       String secretMessage = "The treasure lies beyond the mountains.";
@@ -25,7 +27,21 @@ public class Main {
       System.out.println("Comparing Scroll 2 to Scroll 1: " + scroll2.compareTo(scroll1));
 
       // *** MATH CLASS METHODS ***
-   
+      System.out.println("--- MATH CLASS ---");
 
+      double rand = Math.random();
+      System.out.println("Here's a random number: " + rand);
+      double biggerRand = Math.random() * 500 + 100;
+      System.out.println("Here's a bigger random number: " + biggerRand);
+      int randInt = (int) (Math.random() * 100 + 1);
+      System.out.println("Here's a random whole number: " + randInt);
+
+      double absoluteD = Math.abs(biggerRand);
+      System.out.println("Absolute value of the random bigger number: " + absoluteD);
+
+      int absoluteI = Math.abs(randInt);
+      System.out.println("Absolute value of the random whole number: " + absoluteI);
+
+      
    }
 }
