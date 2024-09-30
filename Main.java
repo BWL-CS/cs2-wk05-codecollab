@@ -16,6 +16,7 @@ public class Main {
       System.out.println("\nPosition of the word 'treasure' in Scroll 1: " + scroll1.indexOf("treasure"));
 
       System.out.println("Do Scroll 1 and the secret message match?: " + scroll1.equals(secretMessage));
+      System.out.println("Do Scroll 2 and the secret message match?: " + scroll2.equals(secretMessage));
 
       System.out.println("Result of comparing Scroll 1 to Scroll 2: " + scroll1.compareTo(scroll2));
       System.out.println("Result of comparing Scroll 2 to Scroll 1: " + scroll2.compareTo(scroll1));
